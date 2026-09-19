@@ -466,12 +466,12 @@
     <div class="about-grid">
       <div class="about-text">
         <p>I'm a Computer Science graduate from <strong>Lovely Professional University</strong>, with a habit of building things end-to-end — frontend, backend, and everything that has to talk to everything else in between. I care about writing software that's scalable and actually solves the problem in front of a user, not just technically correct.</p>
-        <p>My work leans toward <strong>real-time systems</strong> and <strong>AI-integrated applications</strong>: chat platforms with live typing indicators and file sharing, or web apps that call a TensorFlow model to diagnose a mushroom from a photo. I like the parts of engineering where a REST API has to coordinate cleanly with a websocket, a database, and a model service without anything falling over.</p>
+        <p>My work leans toward <strong>real-time systems</strong> and <strong>AI-integrated applications</strong>: chat platforms with live typing indicators and file sharing, web apps that call a TensorFlow model to diagnose a mushroom from a photo, and a Discord bot that tracks reading streaks for a community of readers. I like the parts of engineering where a REST API has to coordinate cleanly with a websocket, a database, and an external service without anything falling over.</p>
         <p>Right now I'm sharpening my Data Structures &amp; Algorithms skills through competitive programming in Java — debugging greedy logic, reaching for the right technique (two pointers, Manacher's algorithm) instead of the first one that compiles — while actively looking for <strong>Software Engineer</strong> and <strong>Full-Stack Developer</strong> roles. Always up for learning something new or building alongside people who care about the details.</p>
       </div>
       <div class="stat-list">
         <div class="stat"><div class="stat-num">7.0</div><div class="stat-label">CGPA · B.Tech CSE</div></div>
-        <div class="stat"><div class="stat-num">2+</div><div class="stat-label">Full-stack projects shipped</div></div>
+        <div class="stat"><div class="stat-num">3</div><div class="stat-label">Full-stack projects shipped</div></div>
         <div class="stat"><div class="stat-num">5</div><div class="stat-label">Certifications earned</div></div>
         <div class="stat"><div class="stat-num">A2</div><div class="stat-label">German language level</div></div>
       </div>
@@ -490,21 +490,27 @@
         </div>
       </div>
       <div class="skill-card">
-        <h3>Frameworks</h3>
+        <h3>Frameworks &amp; Libraries</h3>
         <div class="tag-row">
-          <span class="tag">React.js</span><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">Tailwind CSS</span>
+          <span class="tag">React.js</span><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">Tailwind CSS</span><span class="tag">discord.js</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <h3>Databases</h3>
+        <div class="tag-row">
+          <span class="tag">MongoDB</span><span class="tag">MongoDB Atlas</span><span class="tag">Mongoose</span>
         </div>
       </div>
       <div class="skill-card">
         <h3>Tools &amp; Platforms</h3>
         <div class="tag-row">
-          <span class="tag">Git / GitHub</span><span class="tag">MongoDB Atlas</span><span class="tag">Socket.IO</span><span class="tag">JWT</span><span class="tag">Vercel</span><span class="tag">Render</span><span class="tag">Cloudinary</span>
+          <span class="tag">Git / GitHub</span><span class="tag">Socket.IO</span><span class="tag">JWT</span><span class="tag">Vercel</span><span class="tag">Render</span><span class="tag">Cloudinary</span><span class="tag">Postman</span>
         </div>
       </div>
       <div class="skill-card">
-        <h3>Beyond code</h3>
+        <h3>Core Concepts</h3>
         <div class="tag-row">
-          <span class="tag">Problem-Solving</span><span class="tag">Adaptability</span><span class="tag">Teamwork</span><span class="tag">Time-Management</span>
+          <span class="tag">Data Structures &amp; Algorithms</span><span class="tag">REST API Development</span><span class="tag">Agile / Problem-Solving</span><span class="tag">Generative AI</span><span class="tag">Agentic AI</span><span class="tag">Cloud Computing</span>
         </div>
       </div>
     </div>
@@ -520,12 +526,12 @@
         <div class="project-title">Real-Time Chat Application</div>
         <div class="project-date">May 2026</div>
       </div>
-      <p style="color:var(--text-faint);font-family:var(--font-mono);font-size:12.5px;">React.js · Node.js · MongoDB Atlas · Express.js · Socket.IO</p>
+      <p style="color:var(--text-faint);font-family:var(--font-mono);font-size:12.5px;">React.js · Node.js · Express.js · MongoDB Atlas · Socket.IO · Cloudinary · JWT</p>
       <ul>
-        <li>Built a full-stack real-time chat application supporting personal and group messaging.</li>
-        <li>Implemented JWT authentication, online status, and typing indicators using Socket.IO.</li>
-        <li>Added file sharing and voice message recording with Cloudinary integration.</li>
-        <li>Built REST APIs and integrated real-time communication using Socket.IO.</li>
+        <li>Built a full-stack real-time messaging platform supporting personal and group chats with persistent message history via MongoDB Atlas.</li>
+        <li>Implemented JWT-based authentication and authorization, alongside live online-status and typing-indicator features using Socket.IO.</li>
+        <li>Integrated Cloudinary for file sharing and voice-message uploads, replacing local disk storage for stateless, scalable deployment.</li>
+        <li>Designed and built REST APIs connecting the React frontend to the Node/Express backend; deployed frontend on Vercel and backend on Render.</li>
       </ul>
       <div class="project-tags">
         <span class="tag">Full-Stack</span><span class="tag">Real-Time</span><span class="tag">Auth</span>
@@ -534,18 +540,35 @@
 
     <div class="project">
       <div class="project-top">
-        <div class="project-title">Smart Mushroom Disease Detection</div>
+        <div class="project-title">Smart Mushroom Disease Detection Platform</div>
         <div class="project-date">Nov 2025</div>
       </div>
       <p style="color:var(--text-faint);font-family:var(--font-mono);font-size:12.5px;">React.js · Node.js · Flask · TensorFlow · MongoDB Atlas</p>
       <ul>
-        <li>Developed a full-stack AI-powered web app for real-time mushroom disease detection.</li>
-        <li>Integrated a Flask-based TensorFlow model for disease prediction from uploaded images.</li>
-        <li>Implemented JWT authentication, image upload handling with Multer, and prediction history.</li>
-        <li>Built REST APIs connecting the frontend, backend, and ML service; deployed frontend on Vercel, backend and ML service on Render.</li>
+        <li>Developed a full-stack AI-powered web app enabling real-time mushroom disease detection from user-uploaded images.</li>
+        <li>Integrated a Flask microservice serving a TensorFlow (model.h5) image-classification model, decoupled from the main Node.js API layer.</li>
+        <li>Implemented JWT authentication, Multer-based image upload handling, and persistent prediction-history tracking per user.</li>
+        <li>Built REST APIs coordinating the React frontend, Node.js backend, and Flask ML service; deployed frontend on Vercel, backend and ML service on Render.</li>
       </ul>
       <div class="project-tags">
         <span class="tag">AI / ML</span><span class="tag">Computer Vision</span><span class="tag">Full-Stack</span>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-top">
+        <div class="project-title">Potato — Discord Reading Bot</div>
+        <div class="project-date">2026</div>
+      </div>
+      <p style="color:var(--text-faint);font-family:var(--font-mono);font-size:12.5px;">Node.js · discord.js · MongoDB · Mongoose · Axios · node-cron</p>
+      <ul>
+        <li>Building a full-featured Discord bot for reader communities, integrating Open Library and Wikiquote/ZenQuotes APIs for book search, author lookups, and quotes.</li>
+        <li>Designed a reading-tracker system (start / progress / finished commands), wishlist, and streak tracking backed by MongoDB/Mongoose schemas.</li>
+        <li>Implemented public reading profiles with auto-calculated stats and unlockable badges, plus a scheduled daily quote-of-the-day job via node-cron.</li>
+        <li>Deployment in progress: Render hosting with an Express keep-alive endpoint and uptime monitoring planned for continuous availability.</li>
+      </ul>
+      <div class="project-tags">
+        <span class="tag">Discord Bot</span><span class="tag">Node.js</span><span class="tag">In Progress</span>
       </div>
     </div>
   </section>
@@ -558,11 +581,11 @@
       <div class="resume-left">
         <div class="resume-icon">PDF</div>
         <div>
-          <div class="resume-name">Md_Akbar_Ansari_Resume.pdf</div>
+          <div class="resume-name">Akbar_Resume.pdf</div>
           <div class="resume-meta">Updated 2026 · Education, skills &amp; certifications included</div>
         </div>
       </div>
-      <a class="btn btn-primary" href="Akbar_Ansari_Resume.pdf" download>Download résumé ↓</a>
+      <a class="btn btn-primary" href="Akbar_Resume.pdf" download>Download résumé ↓</a>
     </div>
 
     <div class="subsection">
@@ -593,24 +616,24 @@
     <div class="subsection">
       <h3>Certificates</h3>
       <div class="cert-item">
-        <div><div class="cert-name">Data Structures and Algorithms</div><div class="cert-org">Udemy</div></div>
-        <div class="edu-right">Feb 2024</div>
-      </div>
-      <div class="cert-item">
-        <div><div class="cert-name">Server-Side JavaScript with Node.js</div><div class="cert-org">NIIT</div></div>
-        <div class="edu-right">Apr 2024</div>
-      </div>
-      <div class="cert-item">
-        <div><div class="cert-name">Cloud Computing</div><div class="cert-org">IIT Kharagpur — NPTEL</div></div>
-        <div class="edu-right">Oct 2024</div>
+        <div><div class="cert-name">AI Agents and Agentic AI with Python &amp; Generative AI</div><div class="cert-org">Vanderbilt University</div></div>
+        <div class="edu-right">Feb 2026</div>
       </div>
       <div class="cert-item">
         <div><div class="cert-name">Generative AI with Large Language Models</div><div class="cert-org">DeepLearning.AI &amp; AWS</div></div>
         <div class="edu-right">May 2024</div>
       </div>
       <div class="cert-item">
-        <div><div class="cert-name">AI Agents and Agentic AI with Python &amp; Generative AI</div><div class="cert-org">Vanderbilt University</div></div>
-        <div class="edu-right">Feb 2026</div>
+        <div><div class="cert-name">Cloud Computing</div><div class="cert-org">IIT Kharagpur — NPTEL</div></div>
+        <div class="edu-right">Oct 2024</div>
+      </div>
+      <div class="cert-item">
+        <div><div class="cert-name">Server-Side JavaScript with Node.js</div><div class="cert-org">NIIT</div></div>
+        <div class="edu-right">Apr 2024</div>
+      </div>
+      <div class="cert-item">
+        <div><div class="cert-name">Data Structures and Algorithms</div><div class="cert-org">Udemy</div></div>
+        <div class="edu-right">Feb 2024</div>
       </div>
     </div>
   </section>
