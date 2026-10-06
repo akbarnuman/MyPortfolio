@@ -243,7 +243,10 @@
 
   /* ---------- SKILLS ---------- */
   .skills-grid{
-    display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;
+    display:grid;grid-template-columns:repeat(3,1fr);gap:20px;
+  }
+  .skill-card:last-child{
+    grid-column:span 2;
   }
   .skill-card{
     background:var(--surface);
@@ -400,9 +403,16 @@
     color:var(--text-faint);
   }
 
+  @media(max-width:560px){
+    .skills-grid{grid-template-columns:1fr;}
+    .skill-card:last-child{grid-column:span 1;}
+  }
+
   @media(max-width:820px){
     .hero-grid{grid-template-columns:1fr;}
     .about-grid{grid-template-columns:1fr;}
+    .skills-grid{grid-template-columns:repeat(2,1fr);}
+    .skill-card:last-child{grid-column:span 2;}
     .stat-list{flex-direction:row;flex-wrap:wrap;border-left:none;border-top:1px solid var(--border);padding-left:0;padding-top:20px;gap:28px;}
     section{padding:64px 0;}
     .resume-card{flex-direction:column;align-items:flex-start;}
